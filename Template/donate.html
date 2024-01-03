@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rBgvUGAtcKc0KxuL4H7Yj22pKqsOUZ0tz2Z29UZShhW7g1XVwuzrAGVZS0txT1t3" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles for the navbar */
+    body {
+      padding-top: 56px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+    .navbar-custom {
+      background-color: #7233E1;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* White color for links */
+    }
+    .welcome-image {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set the height to fill the entire viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Text color */
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+
+    /* Additional styles for the text inside the image */
+    .welcome-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+   
+  </style>
+  <title>Unity Circus</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/"><img src="{%static 'Images/logo.png' %}" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <!-- Left side items -->
+        <!-- Right side items -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="whoWeAreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Who We Are
+          </a>
+          <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+            <!-- Dropdown items go here -->
+            <a class="dropdown-item" href="#">Mission</a>
+            <a class="dropdown-item" href="#">Our Story</a>
+            <a class="dropdown-item" href="#">Staff</a>
+            <a class="dropdown-item" href="#">Sponsor</a>
+            <a class="dropdown-item" href="#">Kids</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="whatwedoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="#">Circus Arts</a>
+              <a class="dropdown-item" href="#">Dance</a>
+              <a class="dropdown-item" href="#">Clowing</a>
+              <a class="dropdown-item" href="#">Socail Support</a>
+            </div>
+          </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="visitUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Visit Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
+            <!-- Dropdown items go here -->
+            <a class="dropdown-item" href="#">Circus Show</a>
+            <a class="dropdown-item" href="#">WorkShop & Traning</a>
+            <a class="dropdown-item" href="#">Ferstival</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+            </a>
+            <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="#">Volunter</a>
+              <a class="dropdown-item" href="#">Sponsorship</a>
+            </div>
+          </li>
+        <!-- Donate button on the right -->
+        <li class="nav-item">
+          <a class=" btn btn-light" href="/Donate">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Your content goes here -->
+<!-- Your content goes here -->
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <!-- Add a background image using CSS -->
+            <div class="welcome-image" style="background-image: url({%static 'Images/crying-chil.jpg'%});">
+                <!-- Add some text inside the image -->
+                <div class="welcome-text">
+                    <h1>Donate Today</h1>
+                    <p>You can change lives through the arts.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+      <!-- Three columns with buttons and images below each button -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-4">
+                   
+                    <button class="btn btn-primary mb-3"  data-toggle="modal" data-target="#myModal">Spansor Children's schoolfees</button>
+                    <!-- Image below the button -->
+                <div>
+                    <img src="{% static 'Images/school.jpg'%}" alt="Image 1" style="width: 100%;">
+                </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-4">
+                    
+                    <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#myModal">Spansor Food for children</button>
+                <div>
+                    <!-- Image below the button -->
+                    <img src="{% static 'Images/food.jpeg'%}" alt="Image 4" style="width: 100%;" >
+                </div>
+                    
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-4">
+                  
+                    <button class="btn btn-primary mb-3 justify-content" data-toggle="modal" data-target="#myModal">Spansor Project</button>
+                    <!-- Image below the button -->
+                <div>
+                    <img src="{% static 'Images/gango.jpg'%}" alt="Image 7" style="width: 100%;height: 150%;">
+                </div>    
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Donate Form</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <!-- Your form goes here -->
+          <form action="" method="post">
+            {%for message in messages%}
+         <script>alert(`{{message}}`)</script>
+            {%endfor%}
+            {%csrf_token%}
+            <div class="form-group">
+                <label for="name"> First Name:</label>
+                
+              <input type="text" class="form-control" name="fname" id="name" required>
+            </div>
+            <label for="name">last name</label>
+           
+            <input type="last name" class="form-control" name="lname" id="lastname" required>
+        
+    
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email"required>
+              </div>
+              
+            <div class="form-group">
+                <label for="message to unity circus">message:</label>
+                <textarea type="message to unity circus" class="form-control" name="message" id="message" required></textarea>
+              </div>
+            <!-- Add more form fields as needed -->
+  
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+  
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+    </main>
+        <br>
+      
+        
+        <footer style="background-color: #7233E1; color: #fff; padding: 20px;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h4>Connect with us</h4>
+                      <!-- Add your social media links here -->
+                      <a href="https://www.facebook.com/profile.php?id=100069144213635&paipv=0&eav=AfYGX2qE04anNqCDV97wxQ1F9jfJd8Pkzt2Za2E1fAEfLW18oMthwpVRWSSGAi77XEA" target="_blank"  style="color: #3b5998;"><img src="{% static 'pic/facebook-ico.svg'%}" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://twitter.com/circus_unity" target="_blank"><img src="{% static 'pic/twitter-icon.svg'%}" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://www.instagram.com/unity_circus/" target="_blank"><img src="{% static 'pic/insta-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="unitycircus.info@gmail.com" target="_blank"><img src="{% static 'pic/mail-icon.svg'%}" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://api.whatsapp.com/send/?phone=250781647807&text&type=phone_number&app_absent=0" target="_blank"><img src="{% static 'pic/whatsapp-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                  </div>
+                  <div class="col-md-6 text-right">
+                      <!-- Add any additional footer content here -->
+                      <p>&copy; 2023 Unity Circus. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rBgvUGAtcKc0KxuL4H7Yj22pKqsOUZ0tz2Z29UZShhW7g1XVwuzrAGVZS0txT1t3" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles for the navbar */
+    body {
+      padding-top: 56px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+    .navbar-custom {
+      background-color: #7233E1;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* White color for links */
+    }
+    .welcome-image {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set the height to fill the entire viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Text color */
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+
+    /* Additional styles for the text inside the image */
+    .welcome-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+   
+  </style>
+  <title>Unity Circus</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/"><img src="{%static 'Images/logo.png' %}" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <!-- Left side items -->
+        <!-- Right side items -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="whoWeAreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Who We Are
+          </a>
+          <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+            <!-- Dropdown items go here -->
+            <a class="dropdown-item" href="#">Mission</a>
+            <a class="dropdown-item" href="#">Our Story</a>
+            <a class="dropdown-item" href="#">Staff</a>
+            <a class="dropdown-item" href="#">Sponsor</a>
+            <a class="dropdown-item" href="#">Kids</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="whatwedoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="#">Circus Arts</a>
+              <a class="dropdown-item" href="#">Dance</a>
+              <a class="dropdown-item" href="#">Clowing</a>
+              <a class="dropdown-item" href="#">Socail Support</a>
+            </div>
+          </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="visitUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Visit Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
+            <!-- Dropdown items go here -->
+            <a class="dropdown-item" href="#">Circus Show</a>
+            <a class="dropdown-item" href="#">WorkShop & Traning</a>
+            <a class="dropdown-item" href="#">Ferstival</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+            </a>
+            <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="#">Volunter</a>
+              <a class="dropdown-item" href="#">Sponsorship</a>
+            </div>
+          </li>
+        <!-- Donate button on the right -->
+        <li class="nav-item">
+          <a class=" btn btn-light" href="/Donate">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Your content goes here -->
+<!-- Your content goes here -->
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <!-- Add a background image using CSS -->
+            <div class="welcome-image" style="background-image: url({% static 'Images/KD9A5738.jpg' %});">
+                <!-- Add some text inside the image -->
+                <div class="welcome-text">
+                    <h1>Welcome to Our Unity Circus Website</h1>
+                    <p>This is the main content of your website. Customize it as needed.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two columns below the image -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left column - Who We Are -->
+                <div class="col-md-6">
+                    <h2>Who We Are</h2>
+                    <p>Unity Circus Rwanda is a group that professionally devotes itself to the genre of Acrotheatre.  The professional approach to theatre genres and circus disciplines is an important aspect to delivering the messages that spotlight what causes pain, and anxieties amongst the world population and turning them around to joy, peace, love,  reconciliation through Acrotheatre.</p>
+                    <button class="btn btn-primary">Mission</button>
+                </div>
+
+                <!-- Right column - Support Us -->
+                <div class="col-md-6">
+                    <h2>Support Us</h2>
+                    <p>Help us spread a passion for the arts across Rwanda. We believe that all children, regardless of their background, deserve to have access to the healing powers of the arts. Our artistic training provides art therapy as well as professional skills that lead to lasting employment. Your donation directly supports these programs.</p>
+                    <button class="btn btn-success">Donate</button>
+                </div>
+            </div>
+        </div>
+        <!-- Another div with background image and video tag -->
+        <div class="container-fluid video-section mt-5" style="background-image: url({% static 'Images/KD9A6912.jpg'%});">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Add your YouTube video embed code here -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rrSYENbFuUk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left column - Who We Are -->
+                <div class="col-md-6">
+                 <img src="{% static 'Images/KD9A5738.jpg'%}" width="100%" height="100%">
+                </div>
+
+                <!-- Right column - Support Us -->
+                <div class="col-md-6">
+                    <h2>Circus shows</h2>
+                    <p>Experience a circus show by our talented students. Shows take place on Mondays, Thursdays, and Saturdays starting at 7 p.m. Buy your tickets online or on campus!</p>
+                    <button class="btn btn-primary">Get Ticket Information</button>
+                    <h2>Visit the campus</h2>
+                    <p>Mornings and afternoons, Monday to Friday, we welcome you on free guided tours of our vibrant campus.</p>
+                    <button class="btn btn-primary">Campus Tours</button>
+                </div>
+            </div>
+        </div>
+        <!-- Another section with three columns -->
+<section class="container-fluid mt-5">
+    <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image20.jpeg' %});background-size: cover; background-position: center;">
+            <div class="column-content text-white text-center">
+                <h2>Sponsor Chirld</h2>
+                <p>When you join our child sponsorship program, your monthly gift gives our most at-risk students the aid and support they need to stay in school and pursue their passions.</p>
+                <button class="btn btn-info">I Want To Sponsor Child</button>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image19.jpeg'%});background-size: cover; background-position: center;">
+            <div class="column-content text-white text-center">
+                <h2>Volunteer with Us</h2>
+                <p>We welcome committed and passionate volunteers who have specific expertise or experience which fills a current need. Those needs change over time, but some examples of skills often needed are in social media, communications, IT, lighting, sound design, merchandising, and customer service.</p>
+                <button class="btn btn-info">I Want To Volunteer</button>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image17.jpeg'%});background-size: cover; background-position: center;">
+            <div class="column-content text-white text-center">
+                <h2>Job Openings</h2>
+                <p>Do you believe in the power of the arts as a tool for human development and social change? If this is you, join our team! Check out our open positions here.</p>
+                <button class="btn btn-info">Show Me Job Openings</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- New & Our Story section -->
+
+<section class="container-fluid mt-5">
+    <h2 class="text-center mb-4">New & Our Story</h2>
+    <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col-md-3 column text-center">
+            <img src="{% static 'Images/image19.jpeg' %}" alt="Image 1" class="img-fluid mb-3">
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Unity Circus and the Covid 19 Pandemic</h5>
+                    <p class="card-text">
+                        As the world faces the COVID-19 (Coronavirus) pandemic, the Government of Rwanda today is confirming different cases of infected persons in most of the district in that country. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-3 column text-center">
+            <img src="{% static 'Images/KD9A6912.jpg' %}" alt="Image 2" class="img-fluid mb-3">
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Training children in circus /Acrotheatre</h5>
+                    <p class="card-text">Many children of all ages from the rural areas around Gisenyi come to Unity Circus to have Circus training as their freetime activity and to express their feelings through acrotheatre.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-3 column text-center">
+            <img src="{% static 'Images/KD9A5952.jpg' %}" alt="Image 3" class="img-fluid mb-3">
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Encouraging young artist to attend their schools</h5>
+                    <p class="card-text">Many children in rural areas of Rwanda don't attend schools. The reasons are that they are not able to afford schoolfees and that they don't perform well so they loose motivation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-3 column text-center">
+            <img src="{% static 'Images/image17.jpeg' %}" alt="Image 4" class="img-fluid mb-3">
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Food distribution during the time of calamity</h5>
+                    <p class="card-text">
+                        Food distribution during times of calamity is a critical aspect of emergency response efforts. Ensuring that affected populations have access to an adequate and nutritious food supply is essentialfortheir survival
+                        .</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+</section>
+</main>
+<!-- Footer section -->
+<footer style="background-color: #7233E1; color: #fff; padding: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Connect with us</h4>
+                <!-- Add your social media links here -->
+                <a href="https://www.facebook.com/profile.php?id=100069144213635&paipv=0&eav=AfYGX2qE04anNqCDV97wxQ1F9jfJd8Pkzt2Za2E1fAEfLW18oMthwpVRWSSGAi77XEA" target="_blank"  style="color: #3b5998;"><img src="{% static 'pic/facebook-ico.svg'%}" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                <a href="https://twitter.com/circus_unity" target="_blank"><img src="{% static 'pic/twitter-icon.svg'%}" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                <a href="https://www.instagram.com/unity_circus/" target="_blank"><img src="{% static 'pic/insta-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                <a href="unitycircus.info@gmail.com" target="_blank"><img src="{% static 'pic/mail-icon.svg'%}" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                <a href="https://api.whatsapp.com/send/?phone=250781647807&text&type=phone_number&app_absent=0" target="_blank"><img src="{% static 'pic/whatsapp-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+            </div>
+            <div class="col-md-6 text-right">
+                <!-- Add any additional footer content here -->
+                <p>&copy; 2023 Unity Circus. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
