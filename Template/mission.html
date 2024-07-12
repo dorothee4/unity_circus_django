@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rBgvUGAtcKc0KxuL4H7Yj22pKqsOUZ0tz2Z29UZShhW7g1XVwuzrAGVZS0txT1t3" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles for the navbar */
+    body {
+      padding-top: 56px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+    .navbar-custom {
+      background-color: #7233E1;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* White color for links */
+    }
+    .welcome-image {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set the height to fill the entire viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Text color */
+    }
+
+    .welcome-text {
+        text-align: center;
+        color: #7233E1;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Additional styles for the text inside the image */
+    .welcome-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    } 
+    .testimonial-section {
+    background-color: grey;
+      padding: 50px 0;
+    }
+
+    .testimonial-carousel {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .testimonial-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .testimonial-info {
+      padding-left: 20px;
+    }
+
+    .testimonial-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+     .testimonial-content {
+      font-size: 16px;
+      color: #555555;
+    }
+    .container_1
+    {
+        background-color: aqua;
+        height: 18%;
+    }
+  </style>
+  <title>Unity Circus</title>
+</head>
+<body>
+
+<!-- Navbar -->
+{% include 'navbar.html' %}
+<!-- Your content goes here -->
+<!-- Your content goes here -->
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <!-- Add a background image using CSS -->
+            <div class="welcome-image" style="background-image: url({%static 'Images/aaaaaaaaaab.jpeg'%}); background-position: center; ">
+                <!-- Add some text inside the image -->
+                <div class="welcome-text">
+                 
+                    <h3 class=" text-white"> 
+                    </h3>
+                </div>
+            </div>
+        </div>
+        </section>
+      <!-- Three columns with buttons and images below each button -->
+      <br>
+      <section class="text-center">
+        <!-- Bootstrap Container to center content -->
+        <div class="container mx-auto">
+          <h6 class="text text-primary">"Unity Circus is an Acro theater organization based in Rubavu, Rwanda, East Africa. It was
+            established in 2018 as a performing group of six young acrobat These six finally founded Unity
+            Circus, an organization that offers a diverse educational program through acrobatics, theater and
+            dance for 130 childrens from low-income families in the rural area around the City of Gisenyi
+            called Kanembwe and more than 343 childrens whom indirectly benefiting. In 2021, Unity
+            Circus Sport was registered as a Non-Government Organization accredited by Rwanda
+            Governance Board with the certificate of compliance N 0 1226RGB/NGO/OC/06/2023. It aims
+            to raise Acrotheater artists that will create a positive living environment in society."  </h6>
+        </div>
+      </section>
+     
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Left column for text -->
+            <h1 class="text-center text-primary">Vision</h1>
+            <p>The great vision of Unity Circus Sport is “to create Acro-theatre artists that will create a
+              positive living environment in different societies”. </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Right column for image -->
+            <img src="{%static 'Images/KD9A5738.jpg'%}" alt="Your Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Left column for text -->
+            <img src="{%static 'Images/KD9A6372.jpg'%}" alt="Your Image" class="img-fluid">
+           </div>
+          <div class="col-md-6">
+            <!-- Right column for image -->
+            <h1 class="text-center text-primary">Mission</h1>
+            <p>Unity Circus is dedicated to providing a nurturing and creative environment where young people can access quality arts training, education, and social support,On the side of mission, this is “Acrotheatre for Change.</p>
+         
+          </div>
+        </div>
+      </dicrying-chil.jpgv>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Left column for text -->
+            <h1 class="text-center text-primary">Values</h1>
+            <p>Creativity. Professionalism. Collaboration. Accessibility.</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Right column for image -->
+            <img src="{%static 'Images/KD9A8534.jpg'%}" alt="Your Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Left column for text -->
+            <h1 class="text-center text-primary"><u>Problem statement</u></h1>
+            <p>Currently, Unity Circus Sport has no official office. Since the organization has started its
+              activities, the organization has allocated different enclosed spaces in Kanembwe having large
+              offices with different rooms in which the artists and children work.
+              This component of training children on protecting the environment due to learning the
+              importance of bees will be an additional skill that will be mentioned to the knowledge provided
+              by those 130 direct beneficiaries.</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Right column for image -->
+            <h1 class="text-center text-primary"><u>Objective</u></h1>
+            <p>The objective of this project is to extend the plot of the organization and build a hall 
+              that will be for diverse purposes including the office,safe training place, Hosting and
+               promoting the diversity of artists in the area and connect with ecosystem diversity 
+               through the bee projec</p>
+          </div>
+        </div>
+      </div>
+     
+
+    
+    </main>
+        <br>
+      
+        
+        <footer style="background-color: #7233E1; color: #fff; padding: 20px;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h4>Connect with us</h4>
+                      <!-- Add your social media links here -->
+                      <a href="https://www.facebook.com/profile.php?id=100069144213635&paipv=0&eav=AfYGX2qE04anNqCDV97wxQ1F9jfJd8Pkzt2Za2E1fAEfLW18oMthwpVRWSSGAi77XEA" target="_blank"  style="color: #3b5998;"><img src="{% static 'pic/facebook-ico.svg'%}" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://twitter.com/circus_unity" target="_blank"><img src="{% static 'pic/twitter-icon.svg'%}" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://www.instagram.com/unity_circus/" target="_blank"><img src="{% static 'pic/insta-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="unitycircus.info@gmail.com" target="_blank"><img src="{% static 'pic/mail-icon.svg'%}" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://api.whatsapp.com/send/?phone=250781647807&text&type=phone_number&app_absent=0" target="_blank"><img src="{% static 'pic/whatsapp-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                  </div>
+                  <div class="col-md-6 text-right">
+                      <!-- Add any additional footer content here -->
+                      <p>&copy; {{Years}} Unity Circus. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+      // Synchronize image and information carousels
+      $('#testimonialCarousel').on('slid.bs.carousel', function() {
+        var activeIndex = $('#testimonialCarousel .carousel-inner .active').index();
+        $('#testimonialInfoCarousel').carousel(activeIndex);
+      });
+    });
+  </script>
+</body>
+</html>

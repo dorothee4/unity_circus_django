@@ -1,0 +1,65 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container">
+  
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="/"><img src="{%static 'Images/logo.png' %}" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- Left side items -->
+          <!-- Right side items -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="whoWeAreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Who We Are
+            </a>
+            <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="/Mission">Mission</a>
+              <a class="dropdown-item" href="/our-story">Our Story</a>
+            
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="whatwedoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                What We Do
+              </a>
+              <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
+                <!-- Dropdown items go here -->
+                <a class="dropdown-item" href="/art">Arts & Dance</a>
+               
+               
+                <a class="dropdown-item" href="/Socail-support">Socail Support</a>
+              </div>
+            </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="/contact" >
+              Contact Us
+            </a>
+           
+          </li>
+  
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Get Involved
+              </a>
+              <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
+                <!-- Dropdown items go here -->
+                <a class="dropdown-item" href="/Volunteer">Volunter</a>
+                <a class="dropdown-item" href="/SpansorShip">Sponsorship</a>
+              </div>
+            </li>
+          <!-- Donate button on the right -->
+          <li class="nav-item">
+            <a class=" btn btn-light" href="/Donate">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

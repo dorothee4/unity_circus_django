@@ -52,77 +52,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
-  <div class="container">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="/"><img src="{%static 'Images/logo.png' %}" ></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <!-- Left side items -->
-        <!-- Right side items -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="whoWeAreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Who We Are
-          </a>
-          <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
-            <!-- Dropdown items go here -->
-            <a class="dropdown-item" href="#">Mission</a>
-            <a class="dropdown-item" href="#">Our Story</a>
-            <a class="dropdown-item" href="#">Staff</a>
-            <a class="dropdown-item" href="#">Sponsor</a>
-            <a class="dropdown-item" href="#">Kids</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="whatwedoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              What We Do
-            </a>
-            <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
-              <!-- Dropdown items go here -->
-              <a class="dropdown-item" href="#">Circus Arts</a>
-              <a class="dropdown-item" href="#">Dance</a>
-              <a class="dropdown-item" href="#">Clowing</a>
-              <a class="dropdown-item" href="#">Socail Support</a>
-            </div>
-          </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="visitUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Visit Us
-          </a>
-          <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
-            <!-- Dropdown items go here -->
-            <a class="dropdown-item" href="#">Circus Show</a>
-            <a class="dropdown-item" href="#">WorkShop & Traning</a>
-            <a class="dropdown-item" href="#">Ferstival</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Get Involved
-            </a>
-            <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
-              <!-- Dropdown items go here -->
-              <a class="dropdown-item" href="#">Volunter</a>
-              <a class="dropdown-item" href="#">Sponsorship</a>
-            </div>
-          </li>
-        <!-- Donate button on the right -->
-        <li class="nav-item">
-          <a class=" btn btn-light" href="/Donate">Donate</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{% include 'navbar.html' %}
 <!-- Your content goes here -->
 <!-- Your content goes here -->
 <main>
@@ -132,8 +62,8 @@
             <div class="welcome-image" style="background-image: url({% static 'Images/KD9A5738.jpg' %});">
                 <!-- Add some text inside the image -->
                 <div class="welcome-text">
-                    <h1>Welcome to Our Unity Circus Website</h1>
-                    <p>This is the main content of your website. Customize it as needed.</p>
+                    <h1></h1>
+                   
                 </div>
             </div>
         </div>
@@ -143,16 +73,23 @@
             <div class="row">
                 <!-- Left column - Who We Are -->
                 <div class="col-md-6">
-                    <h2>Who We Are</h2>
-                    <p>Unity Circus Rwanda is a group that professionally devotes itself to the genre of Acrotheatre.  The professional approach to theatre genres and circus disciplines is an important aspect to delivering the messages that spotlight what causes pain, and anxieties amongst the world population and turning them around to joy, peace, love,  reconciliation through Acrotheatre.</p>
-                    <button class="btn btn-primary">Mission</button>
+                    <h2>Who we are</h2>
+                    <p>Unity Circus is an Acro theater organization based in Rubavu, Rwanda, East Africa. It was
+                        established in 2018 as a performing group of six young acrobat These six finally founded Unity
+                        Circus, an organization that offers a diverse educational program through acrobatics, theater and
+                        dance for 130 childrens from low-income families in the rural area around the City of Gisenyi
+                        called Kanembwe and more than 343 childrens whom indirectly benefiting. In 2021, Unity
+                        Circus Sport was registered as a Non-Government Organization accredited by Rwanda
+                        Governance Board with the certificate of compliance <br>N 0 1226RGB/NGO/OC/06/2023. It aims
+                        to raise Acrotheater artists that will create a positive living environment in society.</p>
+                    <a href="/Mission" class="btn btn-primary">Mission</a>
                 </div>
 
                 <!-- Right column - Support Us -->
                 <div class="col-md-6">
                     <h2>Support Us</h2>
                     <p>Help us spread a passion for the arts across Rwanda. We believe that all children, regardless of their background, deserve to have access to the healing powers of the arts. Our artistic training provides art therapy as well as professional skills that lead to lasting employment. Your donation directly supports these programs.</p>
-                    <button class="btn btn-success">Donate</button>
+                    <a  href="/Donate" class="btn btn-success">Donate</a>
                 </div>
             </div>
         </div>
@@ -165,57 +102,30 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
-            <div class="row">
-                <!-- Left column - Who We Are -->
-                <div class="col-md-6">
-                 <img src="{% static 'Images/KD9A5738.jpg'%}" width="100%" height="100%">
-                </div>
+       
+            
 
-                <!-- Right column - Support Us -->
-                <div class="col-md-6">
-                    <h2>Circus shows</h2>
-                    <p>Experience a circus show by our talented students. Shows take place on Mondays, Thursdays, and Saturdays starting at 7 p.m. Buy your tickets online or on campus!</p>
-                    <button class="btn btn-primary">Get Ticket Information</button>
-                    <h2>Visit the campus</h2>
-                    <p>Mornings and afternoons, Monday to Friday, we welcome you on free guided tours of our vibrant campus.</p>
-                    <button class="btn btn-primary">Campus Tours</button>
+                <!-- Bootstrap Container to center content -->
+                <div class="container mx-auto">
+                    <h2></h2>
+                    <p>The Unity Circus Sport is a transformative organization dedicated to empowering youth through
+                        circus arts and skills development. As part of its mission to create a positive impact in rural
+                        communities, Unity Circus Rwanda has embarked on a project to expand its facilities in order to
+                        better serve the children and youth in its programs. This project involves the construction of a
+                        training hall in the area where the project exists by extending the existing plot originally
+                        designated for a beekeeping project.It is planned that we are working with partners to do our best
+                        so that the plot owned by the organization should be extended, hence having construction
+                        activities. The plots listed above were designed within the project of environmental protection
+                        while placing different Bee Hives for the bees protection.</p>
+                    <a href="https://youtu.be/Lhdpnkm7uWI?si=rhPm3AbeVHVAZlZg" class="btn btn-primary" target="_blank">Get  Information</a>
+                    <h2></h2>
+                    <p></p>
+                    
                 </div>
             </div>
         </div>
         <!-- Another section with three columns -->
-<section class="container-fluid mt-5">
-    <div class="row">
 
-        <!-- Column 1 -->
-        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image20.jpeg' %});background-size: cover; background-position: center;">
-            <div class="column-content text-white text-center">
-                <h2>Sponsor Chirld</h2>
-                <p>When you join our child sponsorship program, your monthly gift gives our most at-risk students the aid and support they need to stay in school and pursue their passions.</p>
-                <button class="btn btn-info">I Want To Sponsor Child</button>
-            </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image19.jpeg'%});background-size: cover; background-position: center;">
-            <div class="column-content text-white text-center">
-                <h2>Volunteer with Us</h2>
-                <p>We welcome committed and passionate volunteers who have specific expertise or experience which fills a current need. Those needs change over time, but some examples of skills often needed are in social media, communications, IT, lighting, sound design, merchandising, and customer service.</p>
-                <button class="btn btn-info">I Want To Volunteer</button>
-            </div>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col-md-4 column d-flex align-items-center" style="background-image: url({% static 'Images/image17.jpeg'%});background-size: cover; background-position: center;">
-            <div class="column-content text-white text-center">
-                <h2>Job Openings</h2>
-                <p>Do you believe in the power of the arts as a tool for human development and social change? If this is you, join our team! Check out our open positions here.</p>
-                <button class="btn btn-info">Show Me Job Openings</button>
-            </div>
-        </div>
-
-    </div>
-</section>
 <!-- New & Our Story section -->
 
 <section class="container-fluid mt-5">
@@ -287,7 +197,7 @@
             </div>
             <div class="col-md-6 text-right">
                 <!-- Add any additional footer content here -->
-                <p>&copy; 2023 Unity Circus. All rights reserved.</p>
+                <p>&copy; {{Years}} Unity Circus. All rights reserved.</p>
             </div>
         </div>
     </div>

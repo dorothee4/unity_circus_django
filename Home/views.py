@@ -3,9 +3,12 @@ from .models import Donation
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
+import datetime
+from datetime import datetime
 # Create your views here.
 def HomePage(request):
-    return render(request,'index.html')
+    year = datetime.now().year
+    return render(request,'index.html',{'Years':year})
 def donation(request):
     if request.method=='POST':
         fname=request.POST['fname']
@@ -22,7 +25,23 @@ def donation(request):
 
         messages.success(request,'Personal Infromation sent Successfull')
     else:
-        messages.error(request,"Something went Wrong")
+        print("Something went Wrong")
         
-
-    return render(request,'donate.html')
+    year = datetime.now().year
+    return render(request,'donate.html',{'Years':year})
+def volunteer(request):
+    year = datetime.now().year
+    return render(request,'volunteer.html',{'Years':year})
+def SpansorShip(request):
+    year = datetime.now().year
+    return render(request,'Sponsorship.html',{'Years':year})
+def Mission(request):
+    return render(request,'mission.html')
+def ourStory(request):
+    return render(request,'our-story.html')
+def socail_support(request):
+    return render(request,'socail_support.html')
+def art(request):
+    return render(request,'art.html')
+def contact (request):
+    return render(request,'contact.html')

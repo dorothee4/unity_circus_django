@@ -52,88 +52,18 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
-  <div class="container">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="/"><img src="{%static 'Images/logo.png' %}" ></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <!-- Left side items -->
-        <!-- Right side items -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="whoWeAreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Who We Are
-          </a>
-          <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
-            <!-- Dropdown items go here -->
-            <a class="dropdown-item" href="#">Mission</a>
-            <a class="dropdown-item" href="#">Our Story</a>
-            <a class="dropdown-item" href="#">Staff</a>
-            <a class="dropdown-item" href="#">Sponsor</a>
-            <a class="dropdown-item" href="#">Kids</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="whatwedoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              What We Do
-            </a>
-            <div class="dropdown-menu" aria-labelledby="whoWeAreDropdown">
-              <!-- Dropdown items go here -->
-              <a class="dropdown-item" href="#">Circus Arts</a>
-              <a class="dropdown-item" href="#">Dance</a>
-              <a class="dropdown-item" href="#">Clowing</a>
-              <a class="dropdown-item" href="#">Socail Support</a>
-            </div>
-          </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="visitUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Visit Us
-          </a>
-          <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
-            <!-- Dropdown items go here -->
-            <a class="dropdown-item" href="#">Circus Show</a>
-            <a class="dropdown-item" href="#">WorkShop & Traning</a>
-            <a class="dropdown-item" href="#">Ferstival</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Get Involved
-            </a>
-            <div class="dropdown-menu" aria-labelledby="visitUsDropdown">
-              <!-- Dropdown items go here -->
-              <a class="dropdown-item" href="#">Volunter</a>
-              <a class="dropdown-item" href="#">Sponsorship</a>
-            </div>
-          </li>
-        <!-- Donate button on the right -->
-        <li class="nav-item">
-          <a class=" btn btn-light" href="/Donate">Donate</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{% include 'navbar.html' %}
 <!-- Your content goes here -->
 <!-- Your content goes here -->
 <main>
     <section>
         <div class="container-fluid p-0">
             <!-- Add a background image using CSS -->
-            <div class="welcome-image" style="background-image: url({%static 'Images/crying-chil.jpg'%});">
+            <div class="welcome-image" style="background-image: url({%static 'Images/KD9A6518.jpg'%});">
                 <!-- Add some text inside the image -->
                 <div class="welcome-text">
-                    <h1>Donate Today</h1>
-                    <p>You can change lives through the arts.</p>
+                    <h1>Let's change their lives together through art</h1>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -249,7 +179,7 @@
                   </div>
                   <div class="col-md-6 text-right">
                       <!-- Add any additional footer content here -->
-                      <p>&copy; 2023 Unity Circus. All rights reserved.</p>
+                      <p>&copy; {{Years}} Unity Circus. All rights reserved.</p>
                   </div>
               </div>
           </div>

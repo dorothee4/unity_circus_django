@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rBgvUGAtcKc0KxuL4H7Yj22pKqsOUZ0tz2Z29UZShhW7g1XVwuzrAGVZS0txT1t3" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles for the navbar */
+    body {
+      padding-top: 56px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+    .navbar-custom {
+      background-color: #7233E1;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* White color for links */
+    }
+    .welcome-image {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set the height to fill the entire viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Text color */
+    }
+
+    .welcome-text {
+        text-align: center;
+        color: #7233E1;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Additional styles for the text inside the image */
+    .welcome-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    } 
+    .testimonial-section {
+    background-color: grey;
+      padding: 50px 0;
+    }
+
+    .testimonial-carousel {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .testimonial-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .testimonial-info {
+      padding-left: 20px;
+    }
+
+    .testimonial-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+     .testimonial-content {
+      font-size: 16px;
+      color: #555555;
+    }
+    .container_1
+    {
+        background-color: aqua;
+        height: 18%;
+    }
+    .vertical-divider {
+    border-right: 1px solid #ccc;
+    height: 100%;
+    margin-right: 0px; /* Adjust as needed */
+    margin-left: 10px; /* Adjust as needed */
+    box-sizing: border-box;
+ }
+  </style>
+  <title>Unity Circus</title>
+</head>
+<body>
+
+<!-- Navbar -->
+{% include 'navbar.html' %}
+<!-- Your content goes here -->
+<!-- Your content goes here -->
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <!-- Add a background image using CSS -->
+            <div class="welcome-image" style="background-image: url({%static 'Images/unity.jpg'%});">
+                <!-- Add some text inside the image -->
+                <div class="welcome-text">
+                  
+                </div>
+            </div>
+        </div>
+        </section>
+      <!-- Three columns with buttons and images below each button -->
+      <br>
+     
+     
+      <br>
+      
+      <div class="container">
+        <h4>The Social Support Department of unity circus is dedicated to improving the standard of living for local children and their families. Today, unity circus supports over 200 families directly and 100 indirectly through different programs.</h4><br><br>
+        <div class="row">
+           
+          <div class="col-md-6">
+            <!-- Left column for text -->
+            <h4><u>Child Protection Program</u></h4><br>
+           
+            <p>In the Child Protection Program, our Social Support department identifies the children who are most in need of help. Through targeting outreach and services, Social Support helps these children meet their basic needs.
+
+                Social workers monitor and offer advice to families and children.  They develop trusting relationships with these families through structured meetings and constant communication.
+                
+                Support for all students is provided on campus in the form of first aid, counseling services, and meetings. Selected children are offered social support such as free lunch, daily stipends, and counseling services.
+                
+                Additionally, Social workers conduct outreach missions to educate our local communities about the importance of children’s rights.
+                
+                This important program provides for children’s basic needs, allowing them to focus on their schooling.
+                </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Right column for image -->
+            <h4><u>Sponsorship Program</u></h4><br>
+            <p>
+                Generous international donors provide financial support to selected students. The collective sponsorship program PPSA provides these services to eligible children:
+
+                <ul>   
+                    <li>free lunch 4 days/week</li>
+                     <li>Breakfast & Dinner stipend</li>
+                    <li> Medical care </li>
+                    <li> Uniforms,School fees and other school materials </li>
+                    <li> Additional financial assistance as needed</li>
+                    </ul>
+                  </p>
+          </div>
+        
+        </div>
+        <strong><h3 class="text-center"> <u>Student Development</u></h3></strong> <br>
+        <p>To ensure the success of our students after graduation, both in their professional and personal lives, Phare Ponleu Selpak provides the following support and classes to all students:
+
+            • Professional Skills (computer skills, English, communication). <br>
+            
+            • Life Skills (managing personal finances, healthy relationships, sexual health). <br>
+            
+            • Access to a Library – a campus resource with access to general knowledge, fiction and artistic books, in various languages. <br>
+            
+            • Sports and Leisure Activities – students are encouraged to join the numerous community activities, for example participating in the Angkor Wat International Half Marathon to raise valuable funds. <br>
+            
+            • Community Service – we aim to involve the students in more community projects, environment clean-up programmes, awareness raising activities on a wide range of topics, to continue to nurture in them a sense of gratitude, responsibility and community leadership.</p>
+      </div>
+      <br>
+    </main>
+        <br>
+      
+        
+        <footer style="background-color: #7233E1; color: #fff; padding: 20px;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h4>Connect with us</h4>
+                      <!-- Add your social media links here -->
+                      <a href="https://www.facebook.com/profile.php?id=100069144213635&paipv=0&eav=AfYGX2qE04anNqCDV97wxQ1F9jfJd8Pkzt2Za2E1fAEfLW18oMthwpVRWSSGAi77XEA" target="_blank"  style="color: #3b5998;"><img src="{% static 'pic/facebook-ico.svg'%}" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://twitter.com/circus_unity" target="_blank"><img src="{% static 'pic/twitter-icon.svg'%}" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://www.instagram.com/unity_circus/" target="_blank"><img src="{% static 'pic/insta-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="unitycircus.info@gmail.com" target="_blank"><img src="{% static 'pic/mail-icon.svg'%}" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://api.whatsapp.com/send/?phone=250781647807&text&type=phone_number&app_absent=0" target="_blank"><img src="{% static 'pic/whatsapp-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                  </div>
+                  <div class="col-md-6 text-right">
+                      <!-- Add any additional footer content here -->
+                      <p>&copy; {{Years}} Unity Circus. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+      // Synchronize image and information carousels
+      $('#testimonialCarousel').on('slid.bs.carousel', function() {
+        var activeIndex = $('#testimonialCarousel .carousel-inner .active').index();
+        $('#testimonialInfoCarousel').carousel(activeIndex);
+      });
+    });
+  </script>
+</body>
+</html>

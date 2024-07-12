@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rBgvUGAtcKc0KxuL4H7Yj22pKqsOUZ0tz2Z29UZShhW7g1XVwuzrAGVZS0txT1t3" crossorigin="anonymous">
+
+  <style>
+    /* Custom styles for the navbar */
+    body {
+      padding-top: 56px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+    .navbar-custom {
+      background-color: #7233E1;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* White color for links */
+    }
+    .welcome-image {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set the height to fill the entire viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Text color */
+    }
+
+    .welcome-text {
+        text-align: center;
+        color: #7233E1;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Additional styles for the text inside the image */
+    .welcome-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    } 
+    .testimonial-section {
+    background-color: grey;
+      padding: 50px 0;
+    }
+
+    .testimonial-carousel {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .testimonial-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .testimonial-info {
+      padding-left: 20px;
+    }
+
+    .testimonial-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+      .testimonial-content {
+      font-size: 16px;
+      color: #555555;
+    }
+    .container_1
+    {
+        background-color: aqua;
+        height: 18%;
+    }
+  </style>
+  <title>Unity Circus</title>
+</head>
+<body>
+
+<!-- Navbar -->
+{% include 'navbar.html' %}
+<!-- Your content goes here -->
+<!-- Your content goes here -->
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <!-- Add a background image using CSS -->
+            <div class="welcome-image" style="background-image: url({%static 'Images/food.jpeg'%});">
+                <!-- Add some text inside the image -->
+                <div class="welcome-text">
+                    
+                    <h2 class=" text-dark">
+
+                    </h2>
+                </div>
+            </div>
+        </div>
+        </section>
+      <!-- Three columns with buttons and images below each button -->
+      <br>
+      <section class="text-center">
+        <!-- Bootstrap Container to center content -->
+        <div class="container mx-auto">
+          <p>The contribution of local and international volunteers is invaluable in supporting Circus’s mission to change lives through the arts in Rubavu.
+             Volunteering at Unity circus is free
+      ; however, we do not cover expenses related to your stay. 
+            Our staff will be happy to support you with new Experience and advice regarding Unity Circus and thier Activities or any other practical information you may need.
+
+            You can also have a look at our Volunteer Welcome Guide.</p>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+    
+                  <!-- Testimonial Slide 1 -->
+                  <div class="carousel-item active">
+                    <img src="{%static 'Images/KD9A6912.jpg' %}" alt="Testimonial 1" class="testimonial-img">
+                  </div>
+    
+                  <!-- Testimonial Slide 2 -->
+                  <div class="carousel-item">
+                    <img src="{%static 'Images/KD9A7016.jpg' %}" alt="Testimonial 2" class="testimonial-img">
+                  </div>
+    
+                  <!-- Testimonial Slide 3 -->
+                  <div class="carousel-item">
+                    <img src="{%static 'Images/KD9A6744.jpg' %}" alt="Testimonial 3" class="testimonial-img">
+                  </div>
+    
+                </div>
+    
+                <!-- Navigation Arrows -->
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+    
+            <div class="col-md-6 testimonial-info">
+              <div id="testimonialInfoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+    
+                  <!-- Testimonial Info Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="testimonial-title">Testimonials</div>
+                    <div class="testimonial-content">
+                      <p>""My name is LUCIANO from , and as a volunteer with Unity Circus in Rwanda, I experienced the joy of using acrobatics to empower and uplift communities. From teaching young children the thrill of balancing acts to witnessing their smiles light up as they mastered new tricks, every moment was filled with wonder and connection. Unity Circus not only taught me the power of acrobatics as a tool for personal growth but also showed me the profound impact it can have in bringing people together, transcending language and cultural barriers.""</p>
+                    </div>
+                  </div>
+    
+                  <!-- Testimonial Info Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="testimonial-title">Testimonials</div>
+                    <div class="testimonial-content">
+                      <p>""My name is EMMY i am from Germany, and as a volunteer with Unity Circus in Rwanda, I've seen acrobatics become a bridge between cultures and generations. Through our workshops and performances, we've sparked a sense of unity and resilience in communities still healing from past wounds. Seeing children laugh and adults cheer as they witness the magic of acrobatics has been a humbling and unforgettable experience. Unity Circus is not just about entertainment; it's about fostering hope and empowering individuals to defy gravity, both literally and metaphorically.""</p>
+                    </div>
+                  </div>
+    
+                  <!-- Testimonial Info Slide 3 -->
+                  <div class="carousel-item">
+                    <div class="testimonial-title">Testimonials</div>
+                    <div class="testimonial-content">
+                      <p>"" my name is BOLE SEBASTIAN My time volunteering with Unity Circus in Rwanda has been an enchanting journey, where the warmth of the people and the passion of the youth in dance have deeply touched my heart. The friendly embrace of the Rwandan community has made every moment memorable, but it's the children and youth immersed in dance who have truly brought me closer to the soul of this beautiful country. Their enthusiasm, resilience, and unwavering spirit have been a constant reminder of the transformative power of art and movement in bringing joy and unity to all."
+
+
+
+
+
+
+                        "</p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Content for the first column goes here -->
+            <div class="container_1">
+            <h2>HOW CAN I APPLY?</h2>
+            <p>If you think you can bring something special to the team, do not hesitate to send us a spontaneous application by filling our online inquiry form, we want to hear from you!
+                Before confirming your stay you will also be requested a criminal clearance check and a proof of insurance.</p>
+            </div>
+                <div class="container mt-5">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                          <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                          <label class="form-check-label" for="female">Female</label>
+                        </div>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" required>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="cv">Curriculum Vitae (CV):</label>
+                        <input type="file" class="form-control-file" id="cv" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="cv">Cover Letter:</label>
+                        <input type="file" class="form-control-file" id="cv" required>
+                      </div>
+                  
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+          
+            </div>
+          <div class="col-md-6">
+            <!-- Content for the second column goes here -->
+            <h2>VOLUNTEER WITH US!</h2>
+            <div class="container mt-5">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <button class="btn " data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+                         Who can Volunteer ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mr-2">+</span>
+
+                      </button>
+                    </h5>
+                  </div>
+                  
+                  <div id="collapseInfo" class="collapse">
+                    <div class="card-body">
+                      <!-- More information goes here -->
+                      <p>We welcome committed volunteers who are willing to pitch in with a positive attitude and an open-mind regarding our activities and the local culture! Any volunteer request which could contribute to Unity Circus capacity building will be duly noted and assessed by our Human Resources Department, on a case-by-case basis.
+
+                        What we are looking for are people with a specific expertise or experience corresponding to our current needs. They may vary and include, but are not limited to, communications, IT, fundraising, social support, lighting and sound design, English teaching, customer service… People with circus arts, music, drama or other arts skills are very welcome and should make a proposal explaining how they would use a volunteer opportunity to help develop the skills of our students.
+                        
+                        Volunteers should be 18 years old or over to participate. Due to financial and human resources limitations, we are unable to offer academic internships..</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container ">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <button class="btn " data-toggle="collapse" data-target="#collapseInfo1" aria-expanded="true" aria-controls="collapseInfo">
+                        Why volunteering at Circus? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="mr-2">+</span>
+
+                      </button>
+                    </h5>
+                  </div>
+                  
+                  <div id="collapseInfo1" class="collapse">
+                    <div class="card-body">
+                      <!-- More information goes here -->
+                      <p>Let yourself be immersed in the vibrant acroathreat arts scene
+                        Gain an insight into authentic local culture
+                        Challenge yourself while trying something new and unique
+                        Learn first-hand about issues facing vulnerable communities
+                        Make a difference by supporting our long-term philantropic goals</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container ">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <button class="btn " data-toggle="collapse" data-target="#collapseInfo2" aria-expanded="true" aria-controls="collapseInfo">
+                        What is responsible volunteering? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="mr-2">+</span>
+
+                      </button>
+                    </h5>
+                  </div>
+                  
+                  <div id="collapseInfo2" class="collapse">
+                    <div class="card-body">
+                      <!-- More information goes here -->
+                      <p>International volunteering has grown in popularity, and with so many people looking for a more meaningful way of travelling, going abroad to give a hand to worthy causes, our concern is focusing on a very important step: we have to learn before we can help. Volunteers should research their options thoroughly, understand the context and culture of the communities they visit, and ensure that their skills and experience match the needs. Without adapted preparation and mindset, first time volunteering can be wasteful, and at worst, cause a lot of harm.
+
+                        At Unity Circus, we offer an intimate experience by welcoming only a very few volunteers at a time, who get the chance to be fully immersed in our project and in direct contact with our staff, students and surrounding communities. This trust we place in our volunteers comes with responsibilities, starting with the respect of Unity Circus code of conduct, our child protection policy as well as local culture in general. Everything should be done to put good intentions to good use, and our staff will always be here to guide volunteers and ensure ​their experience at Unity Circus is positive and beneficial to both parties.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container ">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <button class="btn " data-toggle="collapse" data-target="#collapseInfo3" aria-expanded="true" aria-controls="collapseInfo">
+                        How long can I volunteer? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="mr-2">+</span>
+
+                      </button>
+                    </h5>
+                  </div>
+                  
+                  <div id="collapseInfo3" class="collapse">
+                    <div class="card-body">
+                      <!-- More information goes here -->
+                      <p>For the same reasons, we encourage the volunteers to stay for a long term. Volunteers who commit for 3 months or more are preferred. Shorter duration opportunities may be available for highly specific and specialized tasks if there is a corresponding need. We strongly discourage short-term volunteering for positions involving interactions with children.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    
+      
+
+
+    </main>
+        <br>
+      
+        
+        <footer style="background-color: #7233E1; color: #fff; padding: 20px;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h4>Connect with us</h4>
+                      <!-- Add your social media links here -->
+                      <a href="https://www.facebook.com/profile.php?id=100069144213635&paipv=0&eav=AfYGX2qE04anNqCDV97wxQ1F9jfJd8Pkzt2Za2E1fAEfLW18oMthwpVRWSSGAi77XEA" target="_blank"  style="color: #3b5998;"><img src="{% static 'pic/facebook-ico.svg'%}" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://twitter.com/circus_unity" target="_blank"><img src="{% static 'pic/twitter-icon.svg'%}" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://www.instagram.com/unity_circus/" target="_blank"><img src="{% static 'pic/insta-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="unitycircus.info@gmail.com" target="_blank"><img src="{% static 'pic/mail-icon.svg'%}" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                      <a href="https://api.whatsapp.com/send/?phone=250781647807&text&type=phone_number&app_absent=0" target="_blank"><img src="{% static 'pic/whatsapp-icon.svg'%}" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"></a>
+                  </div>
+                  <div class="col-md-6 text-right">
+                      <!-- Add any additional footer content here -->
+                      <p>&copy; {{Years}} Unity Circus. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+      // Synchronize image and information carousels
+      $('#testimonialCarousel').on('slid.bs.carousel', function() {
+        var activeIndex = $('#testimonialCarousel .carousel-inner .active').index();
+        $('#testimonialInfoCarousel').carousel(activeIndex);
+      });
+    });
+  </script>
+</body>
+</html>
